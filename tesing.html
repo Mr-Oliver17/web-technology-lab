@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./testing.css">
+
+    <!-- axios cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <section class="navbar">
+            <i class="bi bi-github"></i>
+            <h2>Search Users Details On Github</h2>
+    </section>
+
+    <div class="user-detail">
+        <div class="search_bar">
+            <form onsubmit="searchUser(); return false">
+                <input type="text" class="search_bar" id="search_bar" placeholder="Your Github User Name">
+                <button type="submit" id="search_button">
+                    <i class="bi bi-binoculars-fill"></i>
+                </button>
+            </form>
+        </div>
+        <div class="display-card " id="user_detail">
+            <div>
+                User ID:
+                <span id="user_login"></span>
+            </div>
+            <div>
+                User Name:
+                <span id="user_name"></span>
+            </div>
+            <div>
+                User Avatar:
+                <img id="user_avatar_url"></img>
+            </div>
+            <div>
+                User URL:
+                <a id="user_github_html_url"></a>
+            </div>
+            <div>
+                <div id="error_message"></div>
+            </div>
+        </div>
+        <script src="./testaing.js"></script>
+    </div>
+
+</body>
+
+</html>
